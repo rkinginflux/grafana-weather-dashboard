@@ -1,0 +1,115 @@
+{
+  "title": "Weather Overview (local k8)",
+  "uid": "a6rjt2",
+  "version": 20,
+  "url": "http://192.168.0.28:3000/d/a6rjt2/weather-overview-local-k8",
+  "refresh": "15s",
+  "graphTooltip": 2,
+  "datasource_uid": "influxdb3-crypto",
+  "database": "weather",
+  "measurement": "weather_observations",
+  "stations": [
+    "KATL",
+    "KBOI",
+    "KBOS",
+    "KDEN",
+    "KDFW",
+    "KJFK",
+    "KLAX",
+    "KMIA",
+    "KORD",
+    "KPHX",
+    "KSEA"
+  ],
+  "panels": [
+    {
+      "id": 1,
+      "title": "Temperature (\u00b0C)",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "id": 2,
+      "title": "Relative Humidity (%)",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 5
+      }
+    },
+    {
+      "id": 3,
+      "title": "Wind Speed (km/h)",
+      "type": "timeseries",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 13
+      }
+    },
+    {
+      "id": 4,
+      "title": "Latest by Station",
+      "type": "table",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 13
+      }
+    },
+    {
+      "id": 9001,
+      "title": "Latest Temp (6h trend, data-driven)",
+      "type": "stat",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": 9002,
+      "title": "Latest Humidity (6h trend, data-driven)",
+      "type": "stat",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      }
+    },
+    {
+      "id": 9003,
+      "title": "Latest Wind (6h trend, data-driven)",
+      "type": "stat",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      }
+    },
+    {
+      "id": 9004,
+      "title": "Latest Pressure (6h trend, station-aware)",
+      "type": "stat",
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      }
+    }
+  ],
+  "generated_utc": "2026-07-20T17:15:26.159950Z"
+}

@@ -1,0 +1,2016 @@
+{
+  "graphTooltip": 2,
+  "id": 3088138618122240,
+  "links": [
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus ALL",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=$__all"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KLAX",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KLAX"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KSEA",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KSEA"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KBOI",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KBOI"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KPHX",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KPHX"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KDEN",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KDEN"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KDFW",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KDFW"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KORD",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KORD"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KATL",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KATL"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KMIA",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KMIA"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KJFK",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KJFK"
+    },
+    {
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": true,
+      "targetBlank": false,
+      "title": "Focus KBOS",
+      "type": "link",
+      "url": "/d/a6rjt2/weather-overview-local-k8?var-station=KBOS"
+    }
+  ],
+  "panels": [
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb3-crypto"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "opacity",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 2,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
+          },
+          "decimals": 1,
+          "overrides": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 70
+              },
+              {
+                "color": "red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KATL.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FF6B6B",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KATL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KATL.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FF6B6B",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KBOI.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#9D4EDD",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KBOI"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KBOI.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#9D4EDD",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KBOS.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#F72585",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KBOS"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KBOS.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#F72585",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KDEN.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#3A86FF",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KDEN"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KDEN.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#3A86FF",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KDFW.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FB8500",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KDFW"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KDFW.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FB8500",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KJFK.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#06D6A0",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KJFK"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KJFK.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#06D6A0",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KLAX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FFD166",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KLAX"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KLAX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FFD166",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KMIA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#00F5D4",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KMIA"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KMIA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#00F5D4",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KORD.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#8338EC",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KORD"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KORD.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#8338EC",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KPHX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#EF476F",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KPHX"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KPHX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#EF476F",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KSEA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#2EC4B6",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KSEA"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KSEA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#2EC4B6",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 5
+      },
+      "id": 1,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Name",
+          "sortDesc": false,
+          "width": 300
+        },
+        "lineInterpolation": "smooth",
+        "showPoints": "never",
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "query": "SELECT mean(temperature_c) FROM weather..weather_observations WHERE $timeFilter AND station =~ /^$station$/ GROUP BY time($__interval), station fill(null)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series"
+        }
+      ],
+      "title": "Temperature (\u00b0C)",
+      "transparent": false,
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb3-crypto"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "opacity",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 2,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
+          },
+          "decimals": 1,
+          "max": 100,
+          "min": 0,
+          "overrides": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 70
+              },
+              {
+                "color": "red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KATL.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FF6B6B",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KATL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KATL.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FF6B6B",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KBOI.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#9D4EDD",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KBOI"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KBOI.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#9D4EDD",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KBOS.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#F72585",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KBOS"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KBOS.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#F72585",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KDEN.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#3A86FF",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KDEN"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KDEN.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#3A86FF",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KDFW.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FB8500",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KDFW"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KDFW.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FB8500",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KJFK.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#06D6A0",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KJFK"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KJFK.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#06D6A0",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KLAX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FFD166",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KLAX"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KLAX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FFD166",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KMIA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#00F5D4",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KMIA"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KMIA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#00F5D4",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KORD.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#8338EC",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KORD"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KORD.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#8338EC",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KPHX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#EF476F",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KPHX"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KPHX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#EF476F",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KSEA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#2EC4B6",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KSEA"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KSEA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#2EC4B6",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 5
+      },
+      "id": 2,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Name",
+          "sortDesc": false,
+          "width": 300
+        },
+        "lineInterpolation": "smooth",
+        "showPoints": "never",
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "query": "SELECT mean(relative_humidity_percent) FROM weather..weather_observations WHERE $timeFilter AND station =~ /^$station$/ GROUP BY time($__interval), station fill(null)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series"
+        }
+      ],
+      "title": "Relative Humidity (%)",
+      "transparent": false,
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb3-crypto"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "opacity",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 2,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
+          },
+          "decimals": 1,
+          "overrides": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 70
+              },
+              {
+                "color": "red",
+                "value": 85
+              }
+            ]
+          },
+          "unit": "velocitykmh"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KATL.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FF6B6B",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KATL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KATL.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FF6B6B",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KBOI.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#9D4EDD",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KBOI"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KBOI.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#9D4EDD",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KBOS.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#F72585",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KBOS"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KBOS.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#F72585",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KDEN.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#3A86FF",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KDEN"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KDEN.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#3A86FF",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KDFW.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FB8500",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KDFW"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KDFW.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FB8500",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KJFK.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#06D6A0",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KJFK"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KJFK.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#06D6A0",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KLAX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FFD166",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KLAX"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KLAX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FFD166",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KMIA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#00F5D4",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KMIA"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KMIA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#00F5D4",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KORD.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#8338EC",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KORD"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KORD.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#8338EC",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KPHX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#EF476F",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KPHX"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KPHX.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#EF476F",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*station: KSEA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#2EC4B6",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "KSEA"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": ".*KSEA.*"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#2EC4B6",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 13
+      },
+      "id": 3,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Name",
+          "sortDesc": false,
+          "width": 300
+        },
+        "lineInterpolation": "smooth",
+        "showPoints": "never",
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "query": "SELECT mean(wind_speed_kmh) FROM weather..weather_observations WHERE $timeFilter AND station =~ /^$station$/ GROUP BY time($__interval), station fill(null)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series"
+        }
+      ],
+      "title": "Wind Speed (km/h)",
+      "transparent": false,
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb3-crypto"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            }
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "last_seen"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "dateTimeAsIso"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "temperature_c"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "celsius"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "humidity_percent"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percent"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "wind_speed_kmh"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "velocitykmh"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "pressure_pa"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "pressurepa"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 13
+      },
+      "id": 4,
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "show": false
+        },
+        "showHeader": true
+      },
+      "targets": [
+        {
+          "query": "SELECT last(time) AS last_seen, last(temperature_c) AS temperature_c, last(relative_humidity_percent) AS humidity_percent, last(wind_speed_kmh) AS wind_speed_kmh, last(barometric_pressure_pa) AS pressure_pa FROM weather..weather_observations WHERE $timeFilter AND station =~ /^$station$/ GROUP BY station",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "table"
+        }
+      ],
+      "title": "Latest by Station",
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "Time": true
+            },
+            "indexByName": {
+              "humidity_percent": 3,
+              "last_seen": 1,
+              "pressure_pa": 5,
+              "station": 0,
+              "temperature_c": 2,
+              "wind_speed_kmh": 4
+            },
+            "renameByName": {
+              "humidity_percent": "Humidity (%)",
+              "last_seen": "Last Seen",
+              "pressure_pa": "Pressure (Pa)",
+              "station": "Station",
+              "temperature_c": "Temp (\u00b0C)",
+              "wind_speed_kmh": "Wind (km/h)"
+            }
+          }
+        }
+      ],
+      "transparent": false,
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb3-crypto"
+      },
+      "description": "30d percentiles from weather data: p10=20.00, p50=29.00, p90=33.00",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "drawStyle": "line",
+            "fillOpacity": 22,
+            "gradientMode": "opacity",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": true
+          },
+          "decimals": 1,
+          "mappings": [],
+          "max": null,
+          "min": null,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "#4CC9F0",
+                "value": null
+              },
+              {
+                "color": "#06D6A0",
+                "value": 20
+              },
+              {
+                "color": "#FFD166",
+                "value": 29
+              },
+              {
+                "color": "#EF476F",
+                "value": 33
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 9001,
+      "options": {
+        "colorMode": "background_solid",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "horizontal",
+        "percentChangeColorMode": "inverted",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": true,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "query": "SELECT mean(temperature_c) FROM weather..weather_observations WHERE $timeFilter AND station =~ /^$station$/ GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series"
+        }
+      ],
+      "title": "Latest Temp (6h trend, data-driven)",
+      "transparent": false,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb3-crypto"
+      },
+      "description": "30d percentiles from weather data: p10=35.01, p50=55.81, p90=78.64",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "drawStyle": "line",
+            "fillOpacity": 22,
+            "gradientMode": "opacity",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": true
+          },
+          "decimals": 1,
+          "mappings": [],
+          "max": null,
+          "min": null,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "#A0C4FF",
+                "value": null
+              },
+              {
+                "color": "#06D6A0",
+                "value": 35.008543817889
+              },
+              {
+                "color": "#FFD166",
+                "value": 55.805678441189
+              },
+              {
+                "color": "#EF476F",
+                "value": 78.63985107242
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      },
+      "id": 9002,
+      "options": {
+        "colorMode": "background_solid",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "horizontal",
+        "percentChangeColorMode": "inverted",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": true,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "query": "SELECT mean(relative_humidity_percent) FROM weather..weather_observations WHERE $timeFilter AND station =~ /^$station$/ GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series"
+        }
+      ],
+      "title": "Latest Humidity (6h trend, data-driven)",
+      "transparent": false,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb3-crypto"
+      },
+      "description": "30d percentiles from weather data: p10=7.42, p50=14.83, p90=22.21",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "drawStyle": "line",
+            "fillOpacity": 22,
+            "gradientMode": "opacity",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": true
+          },
+          "decimals": 1,
+          "mappings": [],
+          "max": null,
+          "min": null,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "#06D6A0",
+                "value": null
+              },
+              {
+                "color": "#7BDFF2",
+                "value": 7.416
+              },
+              {
+                "color": "#FFD166",
+                "value": 14.832
+              },
+              {
+                "color": "#EF476F",
+                "value": 22.212
+              }
+            ]
+          },
+          "unit": "velocitykmh"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
+      "id": 9003,
+      "options": {
+        "colorMode": "background_solid",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "horizontal",
+        "percentChangeColorMode": "inverted",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": true,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "query": "SELECT mean(wind_speed_kmh) FROM weather..weather_observations WHERE $timeFilter AND station =~ /^$station$/ GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series"
+        }
+      ],
+      "title": "Latest Wind (6h trend, data-driven)",
+      "transparent": false,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "influxdb3-crypto"
+      },
+      "description": "30d percentiles from weather data: p10=101015.98, p50=101591.66, p90=101896.44",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "drawStyle": "line",
+            "fillOpacity": 22,
+            "gradientMode": "opacity",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": true
+          },
+          "decimals": 0,
+          "mappings": [],
+          "max": null,
+          "min": null,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "#7BDFF2",
+                "value": null
+              },
+              {
+                "color": "#06D6A0",
+                "value": 101015.98
+              },
+              {
+                "color": "#FFD166",
+                "value": 101591.66
+              },
+              {
+                "color": "#EF476F",
+                "value": 101896.44
+              }
+            ]
+          },
+          "unit": "pressurepa"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
+      "id": 9004,
+      "options": {
+        "colorMode": "background_solid",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "horizontal",
+        "percentChangeColorMode": "inverted",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": true,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "targets": [
+        {
+          "query": "SELECT mean(barometric_pressure_pa) FROM weather..weather_observations WHERE $timeFilter AND station =~ /^$station$/ GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series"
+        }
+      ],
+      "title": "Latest Pressure (6h trend, station-aware)",
+      "transparent": false,
+      "type": "stat"
+    }
+  ],
+  "refresh": "15s",
+  "schemaVersion": 41,
+  "templating": {
+    "list": [
+      {
+        "allValue": ".*",
+        "current": {
+          "text": "All",
+          "value": "$__all"
+        },
+        "datasource": {
+          "type": "influxdb",
+          "uid": "influxdb3-crypto"
+        },
+        "definition": "SHOW TAG VALUES ON weather FROM weather_observations WITH KEY = station",
+        "includeAll": true,
+        "label": "Station",
+        "multi": true,
+        "name": "station",
+        "query": "SHOW TAG VALUES ON weather FROM weather_observations WITH KEY = station",
+        "refresh": 1,
+        "sort": 1,
+        "type": "query"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-24h",
+    "to": "now"
+  },
+  "timezone": "browser",
+  "title": "Weather Overview (local k8)",
+  "uid": "a6rjt2",
+  "version": 20
+}
